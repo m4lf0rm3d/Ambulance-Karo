@@ -52,7 +52,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contact
 
-For any queries or suggestions, please open an issue or contact us at [email](mailto:xorahsan@gmail.com)
+For any queries or suggestions, please open an issue or contact me at [email](mailto:xorahsan@gmail.com)
 
 ## Acknowledgements
 
