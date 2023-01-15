@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* general style for all elements */
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hide the scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+/* Blob for Homepage */
+
+.main_homepage_blob_image{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./media/main_homepage_blob.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main_content{
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-attachment: fixed;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+
+/* Header */
+
+.header_item{
+  width: 100%;
+  height: 65px;
+}
+.logo{
+  width: 300px;
+  display: inline-block;
+  margin: 12px 0px 0px 30px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.header_links{
+  width: 330px;
+  height: 60px;
+  text-align: center;
+  float: right;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 10px 0px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_links li{
+  list-style: none;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 50ms linear all;
+  border: 1px solid transparent;
+}
+.header_links li:hover{
+  background: transparent;
+  color: #ff5049;
+  border: 1px solid #ff5049;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* style for login button in header links */
+
+.header_links li:nth-child(3){
+  background: #ff5049;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.cancel_nav,.open_nav{
+  display: none;
+}
+
+
+/* tagline css */
+
+.homepage_tagline{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline_text{
+  width: 40%;
+  margin: 0px;
+}
+.tagline_text h1{
+  font-size: 3vw;
+  font-weight: bolder;
+  margin: 10px 0px;
+  margin-top: 40px;
+}
+.tagline_text h1 b{
+  color: #ff5049;
+}
+.tagline_text p{
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.tagline_text button{
+  width: 200px;
+  font-size: 20px;
+  height: 50px;
+  background: #ff5049;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  margin: 10px;
+}
+.tagline_text button:hover{
+  cursor: pointer;
+}
+.tagline_ambulance{
+  width: 30%;
+}
+.tagline_ambulance img{
+   width: 500px;
+   max-width: 100%;
+}
+
+/* Singup Page */
+
+.signup_container{
+  width: 450px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0px auto;
+  border: 2px solid #ff5049;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 20px auto;
+
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.signup_container h1{
+  text-align: center;
+  color: #ff5049;
+  width: 70%;
+  border-bottom: 2px solid #ff5049;
+  padding-bottom: 10px;
+  margin: 5px auto;
+  font-size: 25px;
+  padding: 0;
+}
+.signup_container p{
+  font-size: 16px;
+  margin: 4px 0px 4px 10px;
+
+}
+.signup_container input, .signup_container textarea{
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #ff5049;
+  height: 40px;
+  padding: 0px 20px;
+  font-size: 16px;
+}
+.signup_container textarea{
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.signup_container button{
+  background: #ff5049;
+  color: white;
+  width: 150px;
+  display: block;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+.signup_container button:hover{
+  cursor: pointer;
+}
+.signup_container a{
+  font-size: 14px;
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  color: #ff5049;
+}
+.signup_container select{
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #ff5049;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+.signup_container option{
+  color: #ff5049;
+  
+}
+.signup_container input[type='checkbox']{
+  font-size: 20px;
+  width: 15px;
+  background: #ff5049;
+  margin: 0px 10px;
+}
+.custom_checkbox{
+  display: flex;
+  align-items: center;
+}
+
+#previous,#next{
+  width: 130px;
+  float: left;
+  margin: 10px 30px;
+}
+#next{
+  float: right;
+}
+
+/* Dashboard */
+
+.dashboard_main_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.dashboard_sidebar{
+  width: 400px !important;
+  background: #ff5049;
+  height: 100vh;
+  z-index: 2;
+  background: #FFA6A3;
+  background: -webkit-linear-gradient(top, #FFA6A3, #FF5149);
+  background: -moz-linear-gradient(top, #FFA6A3, #FF5149);
+  background: linear-gradient(to bottom, #FFA6A3, #FF5149);
+  color: white;
+  display: inline-block;
+
+}
+.dashboard_sidebar li{
+  width: 95%;
+  margin: 5px auto;
+  list-style: none;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.dashboard_sidebar li:hover{
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.dashboard_sidebar p{
+  text-align: center;
+  margin: 10px auto;
+  border-bottom: 1px solid white;
+  padding-bottom: 12px;
+  font-weight: bolder;
+  font-size: 20px
+}
+.dashboard_content{
+  
+  width: 100%;
+  display: inline-block;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 60px;
+}
+
+.active_sidebar{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ambulance */
+
+#call_ambulance_button{
+  width: 250px;
+  margin: 20px auto;
+  font-size: 18px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: #ff5049;
+  color: white;
+}
+#call_ambulance_button{
+  cursor: pointer;
+}
+.user_profile_details_label{
+  margin: 5px 15px;
+  display: inline-block;
+}
+.user_profile_details{
+  font-size: 21px;
+  color: #ff5049;
+  font-weight: 500;
+  margin: 10px 0px 0px 20px;
+  display: inline-block;
+}
+
+/* blog styles */
+
+.blog_container{
+  width: 80%;
+  margin: 10px auto;
+  font-size: 20px;
+}
+.blog_container h1{
+  font-size: 60px;
+}
+
+/* message container */
+
+.message_container{
+  min-height: 50px;
+  background: white;
+  position: absolute;
+  z-index: 3;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid lightgray;
+  padding: 5px 10px;
+  font-weight: bolder;
+  overflow: hidden;
+  bottom: 20px;
+  right: 0;
+  left: 40%;
+  right: 40%;
+  /* left: 0; */
+  animation: fadeOut 3s linear forwards;
+  display: flex;
+  align-items: center;
+}
+.message_container p{
+  padding-left: 10px;
+}
+.message_container i{
+  font-size: 25px;
+}
+.message_progress{
+	width: 0;
+	height: 5px;
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+	border-radius: 10px;
+  animation: runProgress 2s linear forwards 0.5s;
+}
+@keyframes runProgress {
+	0%	{ width: 0%;  }
+	100% { width: 100%;  }
+}
+@keyframes fadeOut {
+	0% 	{ opacity: 0; }
+	10% { opacity: 1; }
+	90% { opacity: 1; transform: translateY(0px);}
+	99% { opacity: 0; transform: translateY(-30px);}
+	100% { opacity: 0; }
+}
+
+/* welcome header */
+.welcome_header{
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  color: #ff5049;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  z-index: 2;
+}
+.welcome_header i{
+  position: absolute;
+  display: inline;
+  font-size: 35px;
+  line-height: 50px;
+  margin-left: 10px;
+  padding: 0px 10px;
+}
+.welcome_header i:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  border-radius: 10px;
+}
+.welcome_header h3{
+  text-align: center;
+  margin: 10px auto;
+  margin-left: 300px;
+}
+
+/* ambulance waiting state */
+
+.ambulance_waiting_state{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+.ambulance_waiting_state img{
+  width: 150px;
+}
+.ambulance_waiting_state p{
+  font-size: 20px;
+  color: #ff5049;
+}
+.ambulance_waiting_state p:nth-child(3){
+  font-size: 13px;
+}
+
+/* driver details when ambulance found */
+
+.driver_details_ambulance_found{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.driver_details_ambulance_found h1{
+  font-size: 30px;
+  color: #ff5049;
+  text-align: center;
+}
+.ambulance_driver_details_card{
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px 5px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #FFA6A3, #FF5149);
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+.custom_card{
+  width: 300px !important;
+}
+.ambulance_driver_details_card h2{
+  font-size: 20px;
+}
+.ambulance_driver_details_card p{
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 5px 20px;
+}
+.ambulance_driver_details_card a{
+  color: white;
+}
+.ambulance_driver_details_card button{
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  background: transparent;
+  border-radius: 50px;
+  width: 80px;
+  margin-right: 20px;
+  font-size: 12px;
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.accept_request{
+  margin-top: 0px !important;
+  height: 30px !important;
+  color: white important;
+  background: transparent;
+  border: 1px solid white !important;
+}
+.accept_request:hover{
+  background: white !important;
+  color: #ff5049 !important;
+}
+.reached_location{
+  width: 150px !important;
+  margin-top: 0px !important;
+  height: 30px !important;
+  color: white !important;
+  background: transparent;
+  border: 1px solid white !important;
+}
+.reached_location:hover{
+  background: white!important;
+  color: #ff5049 !important;
+}
+.ambulance_driver_details_card button:hover{
+  cursor: pointer;
+  background: #ff5049;
+  color: white;
+}
+.ambulance_driver_details_card span{
+  font-size: 10px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+
+/* history table */
+
+.history_table{
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.history_table th{
+  border: 2px solid #ff5049;
+  padding: 10px;
+  font-weight: bolder;
+  /* color: #ff5049; */
+  background: #ff5049;
+  color: white;
+  /* border-right: 2px solid white; */
+  font-size: 18px;
+}
+.history_table td{
+  border: 2px solid #ff5049;
+  padding: 5px;
+}
+.active{
+  color: #ff5049;
+  font-weight: bolder;
+}
+.fulfilled{
+  color: #0a0;
+  font-weight: bold;
+}
+.canceled{
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+/* donation */
+
+.donation_message{
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 20px !important;
+}
+.donation_message span{
+  color: #ff5049;
+  font-weight: bolder;
+}
+
+/* admin ambulances */
+
+.admin_ambulances{
+  width: 100%;
+  height: auto;
+}
+.admin_ambulances h1{
+  margin: 20px 0px 20px 20px;
+  color: #ff5049;
+}
+
+.custom_model_delete{
+  width: 350px;
+  height: 130px;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+  margin: 0;
+  top: -100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: .5s linear all;
+}
+.custom_model_delete h2{
+  font-size: 15px;
+  color: #ff5049;
+}
+.custom_model_delete button{
+  width: 70px;
+  padding: 5px 20px;
+  border-radius: 40px;
+  border: none;
+  float: right;
+  margin: 10px;
+}
+.custom_model_delete button:hover{
+  cursor: pointer;
+}
+.yes{
+  background: #ff5049;
+  color: white;
+  border: 1px solid #ff5049 !important;
+
+  margin-left: 0 !important;
+}
+.no{
+  background: transparent;
+  border: 1px solid #ff5049 !important;
+  color: #ff5049;
+}
+.close_button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  font-size: 25px;
+  color: gray;
+}
+.close_button:hover{
+  cursor: pointer;
+}
+
+#blur_overlay{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: none;
+}
+
+.history_table button{
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  background: #ff5049;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.history_table button:hover{
+  cursor: pointer;
+}
+.add_ambulance_button{
+  float: right;
+  width: 90px;
+  border-radius: 20px;
+  height: 40px;
+  margin: -5px 20px 0px 0px;
+  border: none;
+  background: #ff5049;
+  color: white;
+  font-size: 17px;
+
+}
+.add_ambulance_button:hover{
+  cursor: pointer;
+}
+.ambulance_table{
+  width: 100%;
+  padding: 0px 10px;
+}
+.custom_model_add_ambulance,.custom_model_update_ambulance{
+  width: 380px;
+  height: auto;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: .5s linear all;
+  top: -100%;
+}
+.custom_model_add_ambulance h2,.custom_model_update_ambulance h2{
+  color: #ff5049;
+  margin: 10px auto;
+  margin-top: 0;
+  text-align: center;
+
+}
+.custom_model_add_ambulance p,.custom_model_update_ambulance p{
+  color: #ff5049;
+  font-weight: bolder;
+  margin: 10px 0px 10px 10px;
+}
+.custom_model_add_ambulance input,.custom_model_update_ambulance input{
+  width: 100%;
+  border: 1px solid #ff5049;
+  height: 30px;
+  border-radius: 40px;
+  padding: 3px 20px;
+  font-size: 14px;
+  outline: none;
+}
+.custom_model_add_ambulance input[type="checkbox"],.custom_model_update_ambulance input[type="checkbox"]{
+  width: 40px;
+  height: 20px;
+}
+.custom_model_add_ambulance select,.custom_model_update_ambulance select{
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ff5049;
+  font-size: 14px;
+  color: #ff5049;
+}
+.custom_model_add_ambulance button,.custom_model_update_ambulance button{
+  margin: 20px 10px 0px 0px;
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  background: #ff5049;
+  color: white;
+  border: 1px solid #ff5049;
+}
+.custom_model_add_ambulance button:hover,.custom_model_update_ambulance button:hover{
+  cursor: pointer;
+}
+
+/* dashboard of sudo admin */
+
+.active_staffs{
+  width: 100%;
+}
+.ambulances_active_count{
+  width: 220px;
+  color: white;
+  background: -webkit-linear-gradient(top, #FFA6A3, #FF5149);
+  background: -moz-linear-gradient(top, #FFA6A3, #FF5149);
+  background: linear-gradient(to bottom, #ff8480, #FF5149);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 140px;
+  padding-top: 30px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 0;
+  overflow: hidden;
+}
+.ambulances_active_count h1{
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.absolute_icon{
+  position: absolute;
+  font-size: 80px;
+  bottom: -10px;
+  right: -10px;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+}
+.ambulances_active_count:hover{
+  cursor: pointer;
+}
+.dashboard_chart_heading{
+  color: #ff5049;
+  font-weight: bolder;
+  margin: 30px 0px 20px 20px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 700px ) {
+  .main_content{
+    /* background: rgb(255,191,188);
+background: linear-gradient(45deg, rgba(255,191,188,1) 0%, rgba(255,139,135,.8) 49%, rgba(255,198,195,1) 100%); */
+  }
+  .header_item{
+    height: 60px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .cancel_nav,.open_nav{
+    display: initial;
+  }
+  .logo{
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+    
+  }
+  .header_links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background: #ff4f49f5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 200ms linear all;
+    z-index: 100;
+  }
+  .header_links li{
+    display: block;
+    text-decoration: underline;
+  }
+  .cancel_nav{
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.226);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .open_nav{
+    position: fixed;
+    top: 8px;
+    left: 12px;
+    font-size: 25px;
+    color: #ff5049;
+    border: 1px solid rgba(0, 0, 0, 0.129);
+    padding: 7px;
+    background: rgba(119, 119, 119, 0.116);
+    border-radius: 5px;
+  }
+
+  .homepage_tagline{
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+  }
+  .tagline_text{
+    width: 100%;
+    padding:  0px 15px;
+    order: 2;
+    margin: 0;
+  }
+  .tagline_text h1{
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .tagline_ambulance{
+    order: 1;
+    width: 60%;
+    margin-top: 10px;
+  }
+  .signup_container{
+    width: 90%;
+    /* border: 1px solid lightgray; */
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .message_container{
+    left: 20px;
+    right: 20px;
+    bottom: 50px;
+  }
+  #previous,#next{
+    width: 130px;
+    float: left;
+    margin: 10px 0px;
+    
+  }
+  #next{
+    float: right;
+  }
+  .dashboard_sidebar{
+    position: absolute;
+    left: -100%;
+    width: 80% !important;
+    transition: 0.5s all linear;
+  }
+  .dashboard_sidebar li{
+    font-size: 17px;
+    height: 50px;
+  }
+  .dashboard_content{
+    padding: 0;
+    padding-top: 60px;
+  }
+  .welcome_header h3{
+    margin: 10px auto;
+  }
+  .history_table{
+    font-size: 11px;
+  }
+  .history_table th{
+    font-size: 13px;
+  }
+  .ambulances_active_count{
+    display: block;
+    margin: 20px auto;
+  }
+}
